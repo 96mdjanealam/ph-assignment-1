@@ -6,13 +6,16 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Azeret Mono;
 
 }
-
+/* header section starts */
 .header-background {
-    width: 1440px;
     height: 652px;
     margin: 0 auto;
     background-image: url(assets/Hero-bg.png);
@@ -61,8 +64,11 @@ body {
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 600;
+    cursor: pointer;
 }
+/* header section ends */
 
+/* why-development section starts */
 .why-development-container {
     width: 1140px;
     height: 1393px;
@@ -167,8 +173,16 @@ body {
     font-size: 20px;
     font-weight: 600;
     padding: 0 20px;
+    cursor: pointer;
 }
 
+.textandbtn button a {
+    text-decoration: none;
+    color: rgb(13, 19, 33);
+}
+/* why-development section ends */
+
+/* why-development section starts */
 .my-inspiration {
     display: flex;
     flex-direction: column;
@@ -176,6 +190,8 @@ body {
     align-items: center;
     text-align: center;
     margin-bottom: 149px;
+    margin: 0 auto;
+
 }
 
 .my-inspiration-text h2 {
@@ -196,6 +212,7 @@ body {
     padding: 32px;
     border: 1px solid rgba(13, 19, 33, 0.2);
     border-radius: 16px;
+    margin-bottom: 149px;
 }
 
 .video iframe {
@@ -203,3 +220,200 @@ body {
     height: 550px;
     border-radius: 16px;
 }
+/* why-development section ends */
+
+/* current-target-container section starts */
+.current-target-container {
+    width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 111px;
+}
+
+.current-target-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.current-target-text h2 {
+    color: rgb(13, 19, 33);
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.current-target-text p {
+    width: 852px;
+    color: rgb(13, 19, 33);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
+.target-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.html-icon {
+    width: 56px;
+    height: 56px;
+}
+
+.html,
+.css,
+.javascript {
+    width: 364px;
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.target-items h2 {
+    color: rgb(13, 19, 33);
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.target-items p {
+    color: rgb(13, 19, 33);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.target-items button,
+.target-items button a {
+    font-family: Azeret Mono;
+    color: rgb(13, 19, 33);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    text-decoration-line: underline;
+    background: none;
+    border: none;
+}
+
+.css {
+    background: rgba(0, 76, 232, 0.05);
+}
+
+.javascript {
+    background: rgba(255, 223, 0, 0.05);
+}
+
+.html {
+    background: rgba(255, 76, 30, 0.05);
+}
+/* current-target-container section ends*/
+
+/* need-support section starts */
+.need-support {
+    background-blend-mode: normal;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/handshake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    width: 1140px;
+    padding: 64px;
+    border-radius: 16px;
+    margin-bottom: 79px;
+}
+
+.need-support h2 {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.need-support p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 38px;
+
+}
+
+.need-support input[type="text"] {
+    width: 548px;
+    height: 57px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.need-support input[type="submit"] {
+    color: rgb(13, 19, 33);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 255, 255);
+    height: 57px;
+    width: 120px;
+    font-family: Azeret Mono;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.need-support form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.need-support form ::placeholder {
+    color: rgba(13, 19, 33, 0.4);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* need-support section ends */
+
+/* footer starts */
+footer {
+    height: 100px;
+    background: rgba(13, 19, 33, 0.03);
+}
+.icon-facebook,
+.icon-github,
+.icon-linkedin {
+    width: 36px;
+    height: 36px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 32px 0;
+}
+/* footer ends */
